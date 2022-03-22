@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Inicio | Instituto de Geología y Paleontología</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="images/faviconGeoDato.png">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/L.Control.Locate.min.css">
+    <link rel="stylesheet" href="css/qgis2web.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/leaflet-measure.css">
+    <link rel="stylesheet" href="css/leaflet-sidebar.css">
+    <link rel="stylesheet" href="css/bootstrap-4.5.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+    <link rel="stylesheet" href="css/leaflet-legend.css">
+    <link rel="stylesheet" href="css/leaflet.draw.css">
+    <link rel="stylesheet" href="css/legend.css">
+	<link rel="stylesheet" href="css/L.Control.Sidebar.css">
+	<link rel="stylesheet" href="css/easyButton.css">
+    <link rel="stylesheet" href="css/leaflet-search.css">
+	
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img src="images/faviconGeoDato.png" width="28" height="28" class="d-inline-block align-top" alt="">
+            Mapa Yacimientos Minerales| Instituto de Geologia y Paleontologia de Cuba</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="padding-left: 35em;">
+            <li class="nav-item active inicio">
+              <a class="nav-link" id="inicio" href="index.html"><i class="fas fa-reply"></i>REGRESAR</a>
+            </li>
+            
+          <li class="nav-item-disabled " >
+                <a class="nav-link "  id='export' href="shape/SHP/Mapa_Yacimientos.rar">EXPORTAR</a>
+              </li>
+              
+
+            <li class=" ">
+              <a class="nav-link" href="ruso.html"  ><img src="images/russia.png" width="18" height="18" >
+               
+              </a>              
+            </li>
+            
+          </ul>
+          
+        </div>
+      </nav>
+    <style>
+        html,
+        body,
+        #map {
+            width: 96rem;
+            height: 43.5rem;
+            /*padding: 0;
+            margin: 0;*/
+        }
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- optionally define the sidebar content via HTML markup -->
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+        <div class="leaflet-sidebar-tabs">
+            <ul>
+                <li><a href="#home"><i class=" fa fa-map"></i></a></li>               
+                <li><a href="#Filtro"><i class=" fa fa-filter"></i></a></li>
+                <li><a href="#Info"><i class=" fa fa-info"></i></a></li>
+                
+            </ul>
+        </div>
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    Capas
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <span id="layercontrol"></span>
+
+
+            </div>
+            
+            <div class="leaflet-sidebar-pane" id="Filtro">
+                <h1 class="leaflet-sidebar-header">
+                    Filtro
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <br>
+                <span id="menu"></span>                
+            </div>
+            <div class="leaflet-sidebar-pane" id="Info">
+                <h1 class="leaflet-sidebar-header">
+                    Leyenda
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                
+                <span id="legend"></span>                
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <style leaflet-browser-print-content>
+        .grid-print-container { 
+            grid-template: auto 1fr auto / 1fr;
+            background-color: orange;
+        }
+        .grid-map-print {
+            grid-row: 2;
+        }
+        .title { 
+            grid-row: 1;
+            justify-self: center;            
+        }
+        .sub-content { 
+            grid-row: 5;
+            padding-left: 10px;
+        }
+    </style>
+        
+        <style>   
+          
+        </style>
+
+
+<style leaflet-browser-print-content>
+	.grid-print-container { /* grid holder that holds all content (map and any other content)*/
+		grid-template: auto 1fr auto / 1fr;
+		background-color: orange;
+	}
+	.grid-map-print { /* map container itself*/
+		grid-row: 2;
+	}
+	.title-print { /* Dynamic title styling*/
+		grid-row: 1;
+		justify-self: center;
+		color: white;
+	}
+	.sub-content { /* Dynamic sub content styling*/
+		grid-row: 5;
+    justify-self: center;
+    color: white;
+	}
+
+  [leaflet-browser-print-pages] {
+                display: none;
+            }
+            .pages-print-container [leaflet-browser-print-pages] {
+                display: block;
+            }
+</style>
+
+    <div id="map">
+    </div>
+   
+
+    
+    <div leaflet-browser-print-pages>
+      <h1 class="title-print" leaflet-browser-print-content>MAPA DE YACIMIENTOS MINERALES</h1>
+      <h3 class="sub-content" leaflet-browser-print-content>Instituto de Geología y Paleontología</h3>
+       <span id="printlegend"></span>
+       <img src="legend/h.png" />
+    </div> 
+
+    <script src="js/qgis2web_expressions.js"></script>
+    <script src="js/leaflet.js"></script> 
+    <script src="js/L.Control.Sidebar.js"></script>
+    <script src="js/easyButton.js"></script>
+    <script src="js/leaflet-search.js"></script>
+    <script src="js/src-draw/Leaflet.draw.js"></script>
+    <script src="js/src-draw/Control.Draw.js"></script>
+    <script src="js/src-draw/Leaflet.Draw.Event.js"></script>
+
+    <script src="js/src-draw/Toolbar.js"></script>
+    <script src="js/src-draw/Tooltip.js"></script>
+
+    <script src="js/src-draw/ext/GeometryUtil.js"></script>
+    <script src="js/src-draw/ext/LatLngUtil.js"></script>
+    <script src="js/src-draw/ext/LineUtil.Intersect.js"></script>
+    <script src="js/src-draw/ext/Polygon.Intersect.js"></script>
+    <script src="js/src-draw/ext/Polyline.Intersect.js"></script>
+    <script src="js/src-draw/ext/TouchEvents.js"></script>
+
+    <script src="js/src-draw/draw/DrawToolbar.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Feature.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Polyline.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Marker.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Circle.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.CircleMarker.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Polygon.js"></script>
+    <script src="js/src-draw/draw/handler/Draw.Rectangle.js"></script>
+
+    <script src="js/src-draw/edit/EditToolbar.js"></script>
+    <script src="js/src-draw/edit/handler/EditToolbar.Delete.js"></script>
+    <script src="js/src-draw/edit/handler/EditToolbar.Edit.js"></script>
+
+
+    <script src="js/src-draw/edit/handler/Edit.Poly.js"></script>
+    <script src="js/src-draw/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="js/src-draw/edit/handler/Edit.Rectangle.js"></script>
+    <script src="js/src-draw/edit/handler/Edit.Marker.js"></script>
+    <script src="js/src-draw/edit/handler/Edit.CircleMarker.js"></script>
+    <script src="js/src-draw/edit/handler/Edit.Circle.js"></script>
+
+    <script src="js/L.Control.Locate.min.js"></script>
+    <script src="js/leaflet.browser.print.js"></script>
+    <script src="js/mis-javascript/filtrar.js"></script>
+    <script src="js/leaflet-legend.js"></script>
+    
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script src="js/L.Control.Layers.Tree.js"></script>
+    <script src="js/mis-javascript/leyenda.js"></script>
+
+
+    <script src="js/leaflet-svg-shape-markers.min.js"></script>
+    <script src="js/leaflet.rotatedMarker.js"></script>
+    <script src="js/leaflet.pattern.js"></script>
+    <script src="js/leaflet-hash.js"></script>
+    <script src="js/Autolinker.min.js"></script>
+    <script src="js/rbush.min.js"></script>
+    <script src="js/labelgun.min.js"></script>
+    <script src="js/labels.js"></script>
+    <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+    <script src="js/leaflet-measure.js"></script>
+    <script src="js/tailDT.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.js"></script>
+    <script src="data/geometalico_1.js"></script>
+    <script src="data/Cayos_2.js"></script>
+    <script src="data/CapitalesProvinciales_3.js"></script>
+    <script src="data/Cayos_lineayregion_4.js"></script>
+    <script src="data/Costa_5.js"></script>
+    <script src="data/Drenaje_Sfcial_6.js"></script>
+    <script src="data/Fallas_7.js"></script>
+    <script src="data/Lim_Prov_L_8.js"></script>
+    <script src="data/Lim_Prov_LINEAL_9.js"></script>
+    <script src="data/Fangosmedicinales_10.js"></script>
+    <script src="data/Agricultura_11.js"></script>
+    <script src="data/ridosdetrituracin_12.js"></script>
+    <script src="data/ridosnaturales_13.js"></script>
+    <script src="data/Piedradecorativaenbosques_14.js"></script>
+    <script src="data/Fuentedecarbonatodecalcio_15.js"></script>
+    <script src="data/Filtrantes_16.js"></script>
+    <script src="data/Fertilizantes_17.js"></script>
+    <script src="data/Cemento_18.js"></script>
+    <script src="data/Joyerayartesana_19.js"></script>
+    <script src="data/Industriasvarias_20.js"></script>
+    <script src="data/FuentededixidodeSi_21.js"></script>
+    <script src="data/Cermica_22.js"></script>
+    <script src="data/Cobre_23.js"></script>
+    <script src="data/Manganeso_24.js"></script>
+    <script src="data/Cromoelementodelplatino_25.js"></script>
+    <script src="data/Cromo_26.js"></script>
+    <script src="data/Walframiothorio_27.js"></script>
+    <script src="data/Oro_28.js"></script>
+    <script src="data/Aluminio_29.js"></script>
+    <script src="data/Hierro_30.js"></script>
+    <script src="data/HierroNiquelCobalto_31.js"></script>
+    <script src="data/Zinc_32.js"></script>
+    <script src="data/Cobremolibdeno_33.js"></script>
+    <script src="js/leaflet-sidebar.js"></script>
+
+
+
+
+    <script src="js/mis-javascript/export.js"> 
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</script>
+</html>

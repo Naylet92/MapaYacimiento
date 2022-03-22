@@ -1,0 +1,367 @@
+ <div id="lgndMetálicos"> 
+                   <h6 class="text-center">Metálicos<i id="btnLinearProjects" class="fa fa-server"></i></h6>
+                   <div id="lgndmetalicosDetail">
+                       <svg width="100%" height="270">
+
+                        <circle cx="8" cy="10" r="6" stroke="black" stroke-width="1" fill="rgba(243,200,160,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="15">Cobre(molibdeno)</text>
+
+
+                        <circle cx="8" cy="35" r="6" stroke="black" stroke-width="1" fill="rgba(28,235,21,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="40">Zinc</text>
+
+                        <circle cx="8" cy="60" r="6" stroke="black" stroke-width="1" fill="rgba(140,147,140,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18"
+                            y="65">Hierro(Niquel,Cobalto)</text>
+
+                        <circle cx="8" cy="85" r="6" stroke="black" stroke-width="1" fill="rgba(21,36,21,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="90">Hierro</text>
+
+                        <circle cx="8" cy="110" r="6" stroke="black" stroke-width="1" fill="rgba(113,162,194,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="115">Aluminio</text>
+
+                        <circle cx="8" cy="135" r="6" stroke="black" stroke-width="1" fill="rgba(216,231,47,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="140">Oro</text>
+
+                        <circle cx="8" cy="160" r="6" stroke="black" stroke-width="1" fill="rgba(148,34,40,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18"
+                            y="165">Walframio,thorio</text>
+
+                        <circle cx="8" cy="185" r="6" stroke="black" stroke-width="1" fill="rgba(47,62,229,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="190">Cromo</text>
+
+                        <circle cx="8" cy="210" r="6" stroke="black" stroke-width="1" fill="rgba(37,226,251,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="215">Cromo,elemento grupo
+                            platino, oro</text>
+
+                        <circle cx="8" cy="235" r="6" stroke="black" stroke-width="1" fill="rgba(251,154,153,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="240">Manganeso</text>
+
+                        <circle cx="8" cy="260" r="6" stroke="black" stroke-width="1" fill="rgba(241,127,20,1.0)" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="265">Cobre</text>
+
+                       </svg>
+                   </div>
+                </div>
+                <div id="lgndNoMetálicos">
+                   <h6 class="text-center">No Metálicos<i id="btnLinearProjects1" class="fa fa-server"></i></h6>
+                   <div id="lgndno-metalicosDetail">
+                       <svg width="100%" height="270">
+
+                        <polygon points="9,-1 18,15 1,15"
+                            style="fill:rgba(231,74,71,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="15">Cerámica</text>
+
+
+                        <polygon points="9,24 18,40 1,40"
+                            style="fill:rgba(237,35,200,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="40">Fuente de dióxido de
+                            Si</text>
+
+                        <polygon points="9,48 18,65 1,65"
+                            style="fill:rgba(34,34,237,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="65">Industrias
+                            varias</text>
+
+                        <polygon points="9,73 18,90 1,90"
+                            style="fill:rgba(225,131,208,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="90">Joyería y
+                            artesanía</text>
+
+                        <polygon points="9,97 18,115 1,115"
+                            style="fill:rgba(132,117,130,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="115">Cemento</text>
+
+                        <polygon points="9,122 18,140 1,140"
+                            style="fill:rgba(140,243,76,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="140">Fertilizantes</text>
+
+                        <polygon points="9,148 18,165 1,165"
+                            style="fill:rgba(246,170,38,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="165">Filtrantes</text>
+
+                        <polygon points="9,173 18,190 1,190"
+                            style="fill:rgba(253,221,181,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="190">Fuente de carbonato de
+                            calcio</text>
+
+                        <polygon points="9,197 18,215 1,215"
+                            style="fill:rgba(16,230,30,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="215">Piedra decorativa en
+                            bosques</text>
+
+                        <polygon points="9,222 18,240 1,240"
+                            style="fill:rgba(128,90,151,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="240">Áridos
+                            naturales</text>
+
+                        <polygon points="9,248 18,265 1,265"
+                            style="fill:rgba(80,36,107,1.0);stroke:black;stroke-width:1;fill-rule:evenodd; width: 10;" />
+                        <text fill="black" font-size="16" font-family="sans-serif" x="18" y="265">Áridos de
+                            trituración</text>
+
+                       </svg>
+                   </div>
+               </div>
+
+var ctlLegend= new L.Control.Legend({
+    position: 'topright',
+    controlButton:{title:"Legend"}
+}).addTo(map);
+
+$(".legend-container").append($("#legend"));
+$(".legend-toggle").append($("<i class='legend-toggle-icon fa fa-server fa-2x' style='color:#000'></i>"));
+
+map.on('overlayadd', function(eventLayer){
+    var strdiv= "#lgnd"+stripSpaces(eventLayer.layer.options.name);
+    $(strdiv).show();
+});
+
+map.on('overlayremove', function(eventLayer){
+    var strdiv= "#lgnd"+stripSpaces(eventLayer.layer.options.name);
+    $(strdiv).hide();  
+});
+
+$(document).ready(function () {
+    $("#btnLinearProjects").click(function () {
+        $("#lgndmetalicosDetail").toggle();
+    });
+});
+
+$(document).ready(function () {
+    $("#btnLinearProjects1").click(function () {
+        $("#lgndno-metalicosDetail").toggle();
+    });
+});
+
+function stripSpaces(str){
+return str.replace(/\s+/g,''); 
+}
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+  label: '<strong >Todos</strong> ',
+    selectAllCheckbox: 'Un/select all',
+    children: [
+        {
+            label: '<strong >Metálicos</strong> ',
+            selectAllCheckbox: 'Un/select all',
+            children: [
+
+                { label: '<img src="legend/Cobremolibdeno_33_0.png" />Cobre(molibdeno)', layer: layer_Cobremolibdeno_33 },
+                { label: '<img src="legend/Zinc_32_0.png" />Zinc', layer: layer_Zinc_32 },
+                { label: '<img src="legend/HierroNiquelCobalto_31_0.png" />Hierro(Cobalto)', layer: layer_HierroNiquelCobalto_31 },
+                { label: '<img src="legend/Hierro_30_0.png" />Hierro', layer: layer_Hierro_30 },
+                { label: '<img src="legend/Aluminio_29_0.png" />Aluminio', layer: layer_Aluminio_29 },
+                { label: '<img src="legend/Walframiothorio_27_0.png" />Walframio,thorio', layer: layer_Walframiothorio_27 },
+                { label: '<img src="legend/Cromo_26_0.png" />Cromo', layer: layer_Cromo_26 },
+                { label: '<img src="legend/Cromoelementodelgrupodelplatinooro_25_0.png" />Cromo,elemento grupo platino, oro', layer: layer_Cromoelementodelgrupodelplatinooro_25 },
+                { label: '<img src="legend/Manganeso_24_0.png" />Manganeso', layer: layer_Manganeso_24 },
+                { label: '<img src="legend/Cobre_23_0.png" />Cobre', layer: layer_Cobre_23 },
+
+            ]
+        },
+        {
+            label: '<strong>No Metálicos</strong>',
+            selectAllCheckbox: 'Un/select all',
+            children: [
+                { label: '<img src="legend/Cermica_22_0.png" />Cerámica', layer: layer_Cermica_22 },
+                { label: '<img src="legend/FuentededixidodeSi_21_0.png" />Fuente de dióxido de Si', layer: layer_FuentededixidodeSi_21 },
+                { label: '<img src="legend/Industriasvarias_20_0.png" />Industrias varias', layer: layer_Industriasvarias_20 },
+                { label: '<img src="legend/Joyerayartesana_19_0.png" />Joyería y artesanía', layer: layer_Joyerayartesana_19 },
+                { label: '<img src="legend/Cemento_18_0.png" />Cemento', layer: layer_Cemento_18 },
+                { label: '<img src="legend/Fertilizantes_17_0.png" />Fertilizantes', layer: layer_Fertilizantes_17 },
+                { label: '<img src="legend/Filtrantes_16_0.png" />Filtrantes', layer: layer_Filtrantes_16 },
+                { label: '<img src="legend/Fuentedecarbonatodecalcio_15_0.png" />Fuente de carbonato de calcio', layer: layer_Cermica_22 },
+                { label: '<img src="legend/Piedradecorativaenbosques_14_0.png" />Piedra decorativa en bosques', layer: layer_Piedradecorativaenbosques_14 },
+                { label: '<img src="legend/ridosnaturales_13_0.png" />Áridos naturales', layer: layer_ridosnaturales_13 },
+                { label: '<img src="legend/ridosdetrituracin_12_0.png" />Áridos de trituración', layer: layer_ridosdetrituracin_12 },
+                { label: '<img src="legend/Agricultura_11_0.png" />Agricultura', layer: layer_Agricultura_11 },
+                { label: '<img src="legend/Fangosmedicinales_10_0.png" />Fangos medicinales', layer: layer_Fangosmedicinales_10 },
+            ]
+        },
+        {
+            label: '<strong>General</strong>',
+            selectAllCheckbox: 'Un/select all',
+            children: [
+                { label: '<img src="legend/Lim_Prov_LINEAL_9.png" /> Lim_Prov_LINEAL', layer: layer_Lim_Prov_LINEAL_9 },
+                { label: '<img src="legend/Lim_Prov_L_8.png" /> Lim_Prov_L', layer: layer_Lim_Prov_L_8 },
+                { label: '<img src="legend/Fallas_7.png" /> Fallas', layer: layer_Fallas_7 },
+                { label: '<img src="legend/Drenaje_Sfcial_6.png" /> Drenaje_Sfcial', layer: layer_Drenaje_Sfcial_6 },
+                { label: '<img src="legend/Costa_5.png" /> Costa', layer: layer_Costa_5 },
+                { label: '<img src="legend/Cayos_lineayregion_4.png" /> Cayos_linea y region', layer: layer_Cayos_lineayregion_4 },
+                { label: '<img src="legend/CapitalesProvinciales_3.png" /> Capitales Provinciales', layer: layer_CapitalesProvinciales_3 },
+                { label: '<img src="legend/Cayos_2.png" /> Cayos', layer: layer_Cayos_2 },
+            ]
+        },
+        {
+            label: '<strong>Información geológica</strong>',
+            selectAllCheckbox: 'Un/select all',
+            children: [
+                { label: 'geometalico<br /><table><tr><td style="text-align: center;"><img src="legend/geometalico_1_ArcoVolcánicoasociadoaofiolitas0.png" /></td><td>Arco Volcánico asociado a ofiolitas</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_ArcoVolcánicoCretácico1.png" /></td><td>Arco Volcánico Cretácico</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_ArcoVolcánicoCretacicoMetamorfizado2.png" /></td><td>Arco Volcánico Cretacico Metamorfizado</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_ArcoVolcánicoPaleogénico3.png" /></td><td>Arco Volcánico Paleogénico</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_BasamentoNeoproterozoicoComplejoSocorro4.png" /></td><td>Basamento Neoproterozoico, Complejo Socorro</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_CaribeanaTerrenosMetamórficos5.png" /></td><td>Caribeana Terrenos Metamórficos</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_CinturónPlegadodelNorteMargenContinental6.png" /></td><td>Cinturón Plegado del Norte, Margen Continental</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_Complejoanfibolítico7.png" /></td><td>Complejo anfibolítico</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_DepósitosPostorogénicosdelTerciario8.png" /></td><td>Depósitos Postorogénicos del Terciario</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_DepósitossinorogénicosdelCampanianotardíoalEocenosuperior9.png" /></td><td>Depósitos sinorogénicos del Campaniano tardío </br> al Eoceno superior</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_GuaniguanicoTerrenoMaya10.png" /></td><td>Guaniguanico, Terreno Maya</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_Melangedesubducción11.png" /></td><td>Melange de subducción</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_OfiolitasRocasMáficasyultramáficas12.png" /></td><td>Ofiolitas, Rocas Máficas y ultramáficas</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_PlutónicosK13.png" /></td><td>Plutónicos K</td></tr><tr><td style="text-align: center;"><img src="legend/geometalico_1_PlutónicosP14.png" /></td><td>Plutónicos P</td></tr><tr><td style="text-align: center;"></td><td></td></tr></table>', layer: layer_geometalico_1 },
+
+            ]
+        }
+    ]
+
+
+----------------------------------------------------------------------------
+
+   .info {
+            padding: 5px 10px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        .info h3 {
+            margin: 0 0 7px;
+            color: #777;
+        }
+
+        .legend {
+            display: block;
+            text-align: left;
+            line-height: 22px;
+            color: #555;
+        }
+
+        .legend i {
+            width: 25px;
+            height: 20px;
+            float: left;
+            margin-right: 8px;
+        }
+
+        .legend span {
+            display: block;
+        }
+
+        #Nometalicos_3 i {
+            background-color: rgba(133,182,111,1.0);
+        }
+        #metalicos_2 i {
+            background-color: rgba(164,113,88,1.0);
+        }
+
+        #Costa i {
+            background-color: rgba(125,139,143,1.0);
+        }
+
+
+
+ layers: [ layer_nometalicos_3, layer_metalicos_2, layer_Costa_1],
+
+
+
+   var controllayers= new L.control.layers.tree(baseTree,overlaysTree).addTo(map);
+        setBounds();
+
+
+     
+        L.Control.Layers.include({
+        getOverlaysTree: function () {
+            var control,ojo, layers;
+            layers = {};
+            control = this;
+            control._layers.forEach(function (obj) {
+                
+                if (obj.overlay) {
+                  layerNameAll = obj.layer.options.name;
+                    
+               return layers[layerNameAll] = control._map.hasLayer(obj.layer.options.layerName);
+                    
+                }
+            });
+          return layers;
+        }
+    });
+   
+    var legend = L.control({position: 'bottomright'});
+   
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        var title = '<h3>LEGEND:</h3>';
+        div.innerHTML = title;
+        div.innerHTML += '<span id="Costa"><i></i> Costa</span>';
+        div.innerHTML += '<span id="metalicos_2"><i></i> metalicos_2</span>';
+        div.innerHTML += '<span id="Nometalicos_3"><i></i> Nometalicos</span>';        
+        
+        
+        return div;
+    };
+    legend.addTo(map);
+
+
+    function showLegend(layer) {
+        var item = ".legend > span:contains(" + layer + ")";
+        $(item).show();
+    }
+
+    function hideLegend(layer) {
+        var item = ".legend > span:contains(" + layer + ")";
+        $(item).hide();
+    }
+
+    map.on('overlayadd', function (eventLayer) {
+        showLegend(eventLayer.name);
+    });
+
+    map.on('overlayremove', function (eventLayer) {
+        hideLegend(eventLayer.name);
+    });
+
+$.each(controllayers.getOverlaysTree(), function(index,value){
+    if (!value) {
+        hideLegend(index);
+        
+    }
+});
+
+////////////////////////////////////////////////////////////////.
+
+legend1.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend1');
+    var title = '<h6> METALICOS:</h6>';
+    div.innerHTML = title;
+   
+    div.innerHTML += '<span id="Cobremolibdeno"><i></i> Cobremolibdeno</span>';  
+    div.innerHTML += '<span id="Zinc"><i></i> Zinc</span>';   
+    div.innerHTML += '<span id="HierroCobalto"><i></i>  HierroyCobalto</span>';
+    div.innerHTML += '<span id="Hierro"><i></i> Hierro</span>';       
+    div.innerHTML += '<span id="Aluminio"><i></i> Aluminio</span>';
+    div.innerHTML += '<span id="Oro"><i></i> layer_Oro_28</span>';
+    div.innerHTML += '<span id="Walframiothorio"><i></i> Walframiothorio</span>';
+    div.innerHTML += '<span id="Cromo"><i></i> Cromo</span>';
+    div.innerHTML += '<span id="CromoElementoDelPl"><i></i> CromoElementoDelPl</span>';
+    div.innerHTML += '<span id="Manganeso"><i></i> Manganeso</span>';
+    div.innerHTML += '<span id="Cobre"><i></i> Cobre</span>';
+   
+    return div;
+};
+legend1.addTo(map);
+
+legend2.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend2');
+    var title = '<h6> Limites:</h6>';
+    div.innerHTML = title;
+   
+    div.innerHTML += '<span id="Lim_Prov_LINEAL"><i></i> Lim_Prov_LINEAL</span>';  
+    div.innerHTML += '<span id="Lim_Prov_L"><i></i>Lim_Prov_L </span>';   
+    div.innerHTML += '<span id="Fallas"><i></i>  Fallas</span>';
+    div.innerHTML += '<span id="Drenaje_Sfcial"><i></i> Drenaje_Sfcial</span>';       
+    div.innerHTML += '<span id="Costa"><i></i> Costa</span>';
+    div.innerHTML += '<span id="Cayos_lineayregion"><i></i> Cayos_lineayregion</span>';
+    div.innerHTML += '<span id="CapitalesProvinciales"><i></i> CapitalesProvinciales</span>';
+    div.innerHTML += '<span id="Cayos"><i></i> Cayos       </span>';
+   
+    return div;
+};
+legend2.addTo(map);
+

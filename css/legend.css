@@ -1,0 +1,157 @@
+.info {
+    padding: 5px 10px;
+    font: 11px/11px Arial, Helvetica, sans-serif;
+    /*background: #fff;*/
+   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);*/
+    border-radius: 5px;
+    float: right;
+   
+}
+.legend3 {
+    top:37px;
+    display: block;
+    text-align: left;
+    line-height: 18px;
+    color: #020202
+   
+    }
+ .legend3 i{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;  
+ }   
+
+.legend2 {
+    top:27px;
+    display: block;
+    text-align: left;
+    line-height: 18px;
+    color: #020202;
+   
+    }
+ .legend2 i{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;  
+ }   
+.legend2 span{
+ 
+    font-size: small;
+}
+
+.legend1 {    
+    display: block;
+    text-align: left;
+    line-height: 18px;
+    color: #020202;
+    }
+ .legend1 i{
+   
+    float: left;
+    margin-right: 8px;  
+ }   
+.legend1 span{
+    
+    font-size: small;
+}
+
+.info h6 {
+    margin: 0 0 7px;
+    color: rgb(59, 58, 58);
+    font-size: small;
+}
+
+.legend {
+    top:7px;
+    left:100px;
+    display: flex;
+    text-align: left;
+    line-height: 18px;
+    color: #020202;
+}
+
+.legend span {
+    padding: 1px;
+    margin: 0;
+    font: 11px/11px Arial, Helvetica, sans-serif;
+    line-height: 18px;   
+}
+
+
+#Cobremolibdeno  {   
+
+    margin-right: 6px ;
+}
+
+#HierroCobalto  {
+    margin-right: 15px ;
+}
+
+#Aluminio  {
+    margin-right: 52px ;
+}
+
+
+#Cromo  {
+    margin-right: 62px ;
+}
+
+#Manganeso  {
+    margin-right: 30px ;
+}
+
+
+/*-----------------------------No-Metalicos--------------------------*/
+
+#Ceramica  {
+    margin-right: 58px;
+}
+
+#IndustriasVarias {
+    margin-right: 28px;
+}
+
+#Cemento  {
+    margin-right: 64px;
+}
+
+#Filtrantes  {
+    margin-right: 67px;
+}
+
+#PiedraDecorativa  {
+    margin-right: 20px;
+}
+
+#RidosdeTrituracion  {
+    margin-right: 11px;
+}
+
+
+/*-----------------------------LIMITES--------------------------*/
+#Lim_Prov_LINEAL  {
+    margin-right: 14px;
+}
+#Lim_Prov_L i {
+    background-image: url(../legend/Lim_Prov_L_8.png);
+}
+#Fallas  {
+    margin-right: 90px;
+}
+#Drenaje_Sfcial i {
+    background-image: url(../legend/Drenaje_Sfcial_6.png);
+}
+#Costa  {
+    margin-right: 90px;
+}
+#Cayos_lineayregion i {
+    background-image: url(../legend/Cayos_lineayregion_4.png);
+}
+#CapitalesProvinciales  {
+    margin-right: 1px;
+}
+#Cayos i {
+    background-image: url(../legend/Cayos_2.png);
+}
